@@ -1,0 +1,134 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: #B00020 !important;
+}
+.nav-link{
+    color: white !important;
+    
+}
+.para{
+    font-size: larger;
+    color: slategrey;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+}
+
+.nav-link:hover{
+    background-color: #FFEBEE;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.section{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 4%;
+}
+h1{
+    
+    text-shadow: 0 2px white, 0 3px #777;
+   
+}
+.section p{
+    color: grey;
+}
+.btn-1{
+    background-color:  #B00020;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    color: white;
+
+}
+.features{
+    margin-top:4% ;
+    margin-bottom:2% ;
+}
+.features button{
+    padding:0.7rem 2rem ;
+    margin-left: 5rem ;
+    font-size: 1.2rem ;
+    opacity:0.7 ;
+
+}
+.center{
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#courses,.a,.b{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 50px;
+    margin:auto;
+}
+#courses img{
+    width: 250px; 
+    height: 170px;
+    border-radius: 10px ;
+    border: 1px solid #000000;
+}
+.apply{
+    margin-top: 4%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+}
+.cs,.buisness,.medical,.journalism{
+    margin: auto;
+
+}
+.apply:hover{
+    color:white;
+    background-color: #B00020;
+    font-weight: bold;
+   
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 50px;
+}
+.transport,.hostel,.food{
+    margin: auto;
+}
+.services img{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+footer{
+    background-color:#B00020 ;
+    color: white;
+    height: 200px;
+    font-size: 17px;
+}
+.end{
+    margin-left: 50px;
+    column-count: 2;
+    column-gap: 150px;
+    
+}
+@media screen and (max-width:1050px){
+    #courses{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+@media screen and (max-width:920px){
+    .services{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+    
+}

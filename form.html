@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+      body{
+        background-image: url(images/back.jpg);
+        background-size: cover;
+       background-attachment: fixed;
+      }
+      form{
+        font-weight: bold;
+        margin: 100px;
+        padding: 10px;
+        
+        
+      }
+      label{
+        display: inline-block;
+        width: 100px;
+        color: white;
+        font-size: large;
+      }
+      input{
+        width: 200px;
+      }
+      .one,.two{
+        width: 40px;
+      }
+       
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/icon.png" width="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="form.html"><b>Admission</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+          </span>
+        </div>
+      </nav><br><br><br>
+      <h1 style="text-align: center;">Aplication Form</h1>
+      <form action="" method="post">
+        <label>First Name</label> <input type="text" placeholder="enter your name"> <br><br>
+        <label>Last Name</label> <input type="text" placeholder="enter your name"> <br><br>
+        <label>Password</label> <input type="password"><br><br>
+        <label>Date Of Birth</label><input type="date"><br><br>
+        <label>Gender</label> <input class="one" type="radio" name="gender" id="male">
+        <label for="male">Male</label>&nbsp;<input class="two" type="radio" name="gender" id="female">
+        <label for="female">Female</label><br><br>
+        <label style="vertical-align: top;">Adress</label><textarea></textarea><br><br>
+        <label>Courses</label><input list="courses">
+                                <datalist id="courses">
+                                  <option value="Computer Science">
+                                  <option value="Buisness Studies">
+                                  <option value="Medical Science">
+                                  <option value="Medical And Journalism">
+                                </datalist>
+        <label>Cell Number</label><input type="number"> <br><br>
+        <label>Upload Photo</label> <input type="file" name="" accept="image/*"> <br><br>
+        <a href=""><button   class="apply">Submit</button></a> 
+        <a href=""><button class="apply">Reset</button></a>                   
+        
+      </form>
+</body>
+</html>
